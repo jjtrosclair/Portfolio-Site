@@ -1,0 +1,599 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+Colors used
+
+Text Color: #3f3f44;
+default link: #00005c;
+active link: #cceabb;
+visited link: #05676e;
+Background color: #f7f7f7;
+button colors: #9a1f40;
+
+
+ */
+
+
+ header {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+nav {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a {
+  color: #00005c;
+}
+
+/*a:hover MUST come after a:visited in the CSS definition in order to 
+  be effective. Likewise, a:active MUST come after a:hover in the CSS 
+  definition in order to work. This means that in the example above, 
+  you’d want to make sure you move your a:hover to AFTER your a:visited*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*the actual width of your 124px container mentioned above would change to 100px 
+  (even including the 20px padding and 4px borders). What it does is force the 
+  padding and border to be included in the final specified width rather than 
+  being added on top, with the width of the item itself changing to accommodate 
+  the padding and border (in other words, 76x + 20px + 4px instead of 100 px + 20px + 4px). 
+  This makes the box model work in a way that makes more sense: 
+  padding and border won’t affect an element’s size if you’ve already specified one.*/
+
+a:visited {
+  /* visited link */
+  color: #05676e;
+}
+
+a:hover,
+a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:active {
+  /* selected link */
+  color: #cceabb;
+}
+
+
+body {
+
+  background-color: #f7f7f7;
+  color: #3f3f44;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 1rem;
+
+}
+
+/* HEADER */
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: solid #3f3f44;
+  border-width: 1.5px;
+
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.logo_picture {
+
+  /*A common use is to set max-width: 100%; height: auto; 
+  so large images don’t exceed their containers width. 
+  Another way is the use of object-fit property, 
+  this will fit image, without changing the proportionally. */
+
+  max-width: 30%;
+
+
+  -o-object-fit: contain;
+
+
+     object-fit: contain;
+}
+
+.logo-title {
+  font-size: 'Raleway';
+  font-weight: 400;
+  white-space: nowrap;
+  margin-left: 2%;
+  margin-top: auto;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+
+
+
+}
+
+button {
+
+  /* overwrites browser defaults and resets the border */
+
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  background-color: #9a1f40;
+  color: #f7f7f7;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: undefined;
+    /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+    e.g.  transition: opacity .2s; 
+
+    IS THE SAME AS
+
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    
+    While transition-property (the property you want to animate/change)
+    and transition-duration are both required to make the 
+    transition visible, the other two have default values that 
+    are applied if nothing else is specified. For 
+    transition-timing-function, this defaults to ease, 
+    and for transition-delay, this defaults to 0 seconds.  */
+
+  -webkit-transition: opacity .2s, font-size 0.5s;
+
+  -o-transition: opacity .2s, font-size 0.5s;
+
+  transition: opacity .2s, font-size 0.5s;
+
+  /*RGBA color value, which is an RGB color value with a 
+    fourth value that regulates the “Alpha” channel of the color 
+    (essentially telling the color how solid or transparent it should be). A value of 1 would 
+    indicate complete opacity, while a value of 0 would indicate complete transparency.*/
+}
+
+.submit-button {
+
+  /* overwrites browser defaults and resets the border */
+
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  background-color: #9a1f40;
+  color: #f7f7f7;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: undefined;
+    /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+    e.g.  transition: opacity .2s; 
+
+    IS THE SAME AS
+
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    
+    While transition-property (the property you want to animate/change)
+    and transition-duration are both required to make the 
+    transition visible, the other two have default values that 
+    are applied if nothing else is specified. For 
+    transition-timing-function, this defaults to ease, 
+    and for transition-delay, this defaults to 0 seconds.  */
+
+  -webkit-transition: opacity .2s, font-size 0.5s;
+
+  -o-transition: opacity .2s, font-size 0.5s;
+
+  transition: opacity .2s, font-size 0.5s;
+
+  /*RGBA color value, which is an RGB color value with a 
+    fourth value that regulates the “Alpha” channel of the color 
+    (essentially telling the color how solid or transparent it should be). A value of 1 would 
+    indicate complete opacity, while a value of 0 would indicate complete transparency.*/
+}
+
+.button {
+
+  /* overwrites browser defaults and resets the border */
+
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  background-color: #9a1f40;
+  color: #f7f7f7;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: undefined;
+    /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+    e.g.  transition: opacity .2s; 
+
+    IS THE SAME AS
+
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    
+    While transition-property (the property you want to animate/change)
+    and transition-duration are both required to make the 
+    transition visible, the other two have default values that 
+    are applied if nothing else is specified. For 
+    transition-timing-function, this defaults to ease, 
+    and for transition-delay, this defaults to 0 seconds.  */
+
+  -webkit-transition: opacity .2s, font-size 0.5s;
+
+  -o-transition: opacity .2s, font-size 0.5s;
+
+  transition: opacity .2s, font-size 0.5s;
+
+  /*RGBA color value, which is an RGB color value with a 
+    fourth value that regulates the “Alpha” channel of the color 
+    (essentially telling the color how solid or transparent it should be). A value of 1 would 
+    indicate complete opacity, while a value of 0 would indicate complete transparency.*/
+}
+
+
+.button-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.button:visited {
+  color: #f7f7f7;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .8;
+  font-size: 18px;
+}
+
+button:focus {
+  cursor: pointer;
+  opacity: .8;
+  font-size: 18px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: .8;
+  font-size: 18px;
+}
+
+.button:focus {
+  cursor: pointer;
+  opacity: .8;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 120%;
+}
+
+thead {
+  text-decoration: underline;
+
+}
+
+th {
+  padding: 1.5rem;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+/*  min-width: 360px;
+  max-width: 1200px; */
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.portrait_photo {
+  border-radius: 100%;
+  width: 15.625rem;
+  float: left;
+  margin-right: 2.5rem;
+}
+
+.page_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+/*text-align property can center 
+any inline and inline-block elements.*/
+
+.social_icon {
+  margin-top: 5px;
+  width: 3.55rem;
+}
+
+/* Grid fallback*/
+
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.25rem 1fr 1.25rem 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.25rem;
+
+}
+
+.grid__item {
+  padding: 1.6rem;
+  background-color: #84a9ac;
+  width: auto;
+}
+
+.grid__item:last-child {
+  /* be in the third column */
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+
+  -ms-grid-column-span: 0;
+
+  grid-column-end: 3;
+
+  /*start in the first row */
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  /* end at the beginning of the third row*/
+  -ms-grid-row-span: 2;
+  grid-row-end: 3;
+}
+
+
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 1.25rem 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+}
+
+
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .5rem;
+  -ms-grid-columns: 1fr .5rem 1fr .5rem 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
+
+.footer-grid__item {}
+
+
+.picture-attribution {
+  text-align: center;
+  font-size: 10px;
+}
+
+.icon-ref {
+  text-decoration: none;
+}
+
+/* ABOUT PAGE */
+
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.about-paragraph {
+  text-align: center;
+  margin: auto;
+  margin-top: 4rem;
+  width: 30rem;
+
+}
+
+.about-table {
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+
+
+
+/* ABOUT SVG */
+.svg-about {
+  text-align: center;
+
+}
+
+
+.cls-3 {
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #90ee90
+  }
+
+  50% {
+    fill: #ffa07a;
+  }
+
+  100% {
+    fill: #87cefa;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #90ee90
+  }
+
+  50% {
+    fill: #ffa07a;
+  }
+
+  100% {
+    fill: #87cefa;
+  }
+}
+
+/* CONTACT */
+
+
+
+
+label {
+  line-height: 3rem;
+}
+
+
+input,
+textarea {
+  width: 15rem;
+  margin-top: rem;
+}
+
+.contact-info {
+  padding-top: 4rem;
+  text-align: center;
+  line-height: 1.5rem;
+
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.submit-button {
+  width: auto;
+  margin-top: 1rem;
+  -webkit-transition: font-size 0.5s, background-color .01s;
+  -o-transition: font-size 0.5s, background-color .01s;
+  transition: font-size 0.5s, background-color .01s;
+}
+
+.submit-button:hover {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button:active,
+.submit-button:active {
+  background-color: var(button-active);
+}
+
+#contact-form {
+
+  text-align: center;
+  margin: 4rem auto 4rem;
+
+
+}

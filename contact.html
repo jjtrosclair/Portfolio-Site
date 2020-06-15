@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <img class="logo_picture page-header__item" src="img/logo_picture.png" alt="logo">
+        <nav class="navigation-list page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a role="menuitem" href="index.html" class="navigation-list__item">Home</a>
+                </li role="presentation">
+                <li role="presentation">
+                    <a role="menuitem" href="about.html" class="navigation-list__item">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" href="contact.html"
+                        class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" href="work.html" class="navigation-list__item">Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-info">
+        Jonathan Trosclair<br>
+        38 Rain St.<br>
+        Exeter, PA, 19867<br>
+        United States<br>
+        <br>
+        Tel: <a class="contact-link" href="tel:+491234567">+1 456-6878</a><br>
+        Skype: <a class="contact-link" href="skype:hello.Jonathan"> hello.careerfoundry</a><br>
+        Email: jjtrosclair (at) gmail (dot) (com)
+        <br>
+    <a href="mailto:jjt@gmail.com">Contact me</a>
+    </div>
+   
+    
+    <form id="contact-form" action="" method="post">
+        <label for="contact-email" class="standard-label">Email: </label>
+        <br>
+        <input id="contact-email" type="email" required>
+        <br>
+        <label for="contact-phone" class="standard-label">Telephone:</label>
+        <br>
+        <input id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" type="tel">
+        <br>
+        <label for="contact-message">Message:</label>
+        <br>
+        <textarea id="contact-message" maxlength="240" required></textarea>
+        <br>
+        <input class="submit-button" type="submit" value="Send Message">
+    </form>
+
+
+
+
+
+
+    <footer class="page_footer">
+        <p>Find me on</p>
+        <div class="footer-grid social-media">
+            <img class="footer-grid__item" src="img/github_icon.svg" alt="github">
+            <!-- Twitter logo -->
+            <img class="footer-grid__item" src="img/twitter_icon.svg" alt="twitter">
+            <!-- LinkedIn logo -->
+            <img class="footer-grid__item social_icon" src="img/linkedin_icon.svg" alt="linkedin">
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
